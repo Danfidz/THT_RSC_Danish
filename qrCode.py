@@ -6,7 +6,7 @@ from pyzbar.pyzbar import decode
 import webbrowser
 
 img = cv2.imread("KSM.jpg")
-# print(decode(img))
+
 for code in decode(img):
     print(code.type)
     print(code.data.decode("utf-8"))
